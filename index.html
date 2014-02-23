@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	
+	<meta name="description" content="document">
+	<meta name="author" content="Anushka Srivastava">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tourism India</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Author for Onextrapixel" />
+    <link rel="shortcut icon" href="../file/favicon.gif"> 
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+    <!-- Edit Below -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="css/animate.min.css"></script>
+      <link href='css/animate.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="../file/js/modernizr.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/dviz.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.tipsy.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load('visualization', '1.0', {'packages': ['corechart', 'table']});</script>
+    <script type="text/javascript" src="js/dviz.js"></script>
+    <script type="text/javascript">$(function() {dviz.run();});</script>
+    <script type="text/javascript" src="js/scatter.js"></script>
+   
+
+
+    <link href='wax/theme/controls.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/common.css">
+  
+<script language="JavaScript" type="text/javascript">
+<!--
+//v1.7
+// Flash Player Version Detection
+// Detect Client Browser type
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+function ControlVersion()
+{
+  var version;
+  var axo;
+  var e;
+  // NOTE : new ActiveXObject(strFoo) throws an exception if strFoo isn't in the registry
+  try {
+    // version will be set for 7.X or greater players
+    axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+    version = axo.GetVariable("$version");
+  } catch (e) {
+  }
+  if (!version)
+  {
+    try {
+      // version will be set for 6.X players only
+      axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+      
+      // installed player is some revision of 6.0
+      // GetVariable("$version") crashes for versions 6.0.22 through 6.0.29,
+      // so we have to be careful. 
+      
+      // default to the first public version
+      version = "WIN 6,0,21,0";
+      // throws if AllowScripAccess does not exist (introduced in 6.0r47)   
+      axo.AllowScriptAccess = "always";
+      // safe to call for 6.0r47 or greater
+      version = axo.GetVariable("$version");
+    } catch (e) {
+    }
+  }
+  if (!version)
+  {
+    try {
+      // version will be set for 4.X or 5.X player
+      axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+      version = axo.GetVariable("$version");
+    } catch (e) {
+    }
+  }
+  if (!version)
+  {
+    try {
+      // version will be set for 3.X player
+      axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.3");
+      version = "WIN 3,0,18,0";
+    } catch (e) {
+    }
+  }
+  if (!version)
+  {
+    try {
+      // version will be set for 2.X player
+      axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash");
+      version = "WIN 2,0,0,11";
+    } catch (e) {
+      version = -1;
+    }
+  }
+  
+  return version;
+}
+// JavaScript helper required to detect Flash Player PlugIn version information
+function GetSwfVer(){
+  // NS/Opera version >= 3 check for Flash plugin in plugin array
+  var flashVer = -1;
+  
+  if (navigator.plugins != null && navigator.plugins.length > 0) {
+    if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+      var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+      var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+      var descArray = flashDescription.split(" ");
+      var tempArrayMajor = descArray[2].split(".");     
+      var versionMajor = tempArrayMajor[0];
+      var versionMinor = tempArrayMajor[1];
+      var versionRevision = descArray[3];
+      if (versionRevision == "") {
+        versionRevision = descArray[4];
+      }
+      if (versionRevision[0] == "d") {
+        versionRevision = versionRevision.substring(1);
+      } else if (versionRevision[0] == "r") {
+        versionRevision = versionRevision.substring(1);
+        if (versionRevision.indexOf("d") > 0) {
+          versionRevision = versionRevision.substring(0, versionRevision.indexOf("d"));
+        }
+      }
+      var flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+    }
+  }
+  // MSN/WebTV 2.6 supports Flash 4
+  else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+  // WebTV 2.5 supports Flash 3
+  else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+  // older WebTV supports Flash 2
+  else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+  else if ( isIE && isWin && !isOpera ) {
+    flashVer = ControlVersion();
+  } 
+  return flashVer;
+}
+// When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision)
+{
+  versionStr = GetSwfVer();
+  if (versionStr == -1 ) {
+    return false;
+  } else if (versionStr != 0) {
+    if(isIE && isWin && !isOpera) {
+      // Given "WIN 2,0,0,11"
+      tempArray         = versionStr.split(" ");  // ["WIN", "2,0,0,11"]
+      tempString        = tempArray[1];     // "2,0,0,11"
+      versionArray      = tempString.split(",");  // ['2', '0', '0', '11']
+    } else {
+      versionArray      = versionStr.split(".");
+    }
+    var versionMajor      = versionArray[0];
+    var versionMinor      = versionArray[1];
+    var versionRevision   = versionArray[2];
+          // is the major.revision >= requested major.revision AND the minor version >= requested minor
+    if (versionMajor > parseFloat(reqMajorVer)) {
+      return true;
+    } else if (versionMajor == parseFloat(reqMajorVer)) {
+      if (versionMinor > parseFloat(reqMinorVer))
+        return true;
+      else if (versionMinor == parseFloat(reqMinorVer)) {
+        if (versionRevision >= parseFloat(reqRevision))
+          return true;
+      }
+    }
+    return false;
+  }
+}
+function AC_AddExtension(src, ext)
+{
+  if (src.indexOf('?') != -1)
+    return src.replace(/\?/, ext+'?'); 
+  else
+    return src + ext;
+}
+function AC_Generateobj(objAttrs, params, embedAttrs) 
+{ 
+  var str = '';
+  if (isIE && isWin && !isOpera)
+  {
+    str += '<object ';
+    for (var i in objAttrs)
+    {
+      str += i + '="' + objAttrs[i] + '" ';
+    }
+    str += '>';
+    for (var i in params)
+    {
+      str += '<param name="' + i + '" value="' + params[i] + '" /> ';
+    }
+    str += '</object>';
+  }
+  else
+  {
+    str += '<embed ';
+    for (var i in embedAttrs)
+    {
+      str += i + '="' + embedAttrs[i] + '" ';
+    }
+    str += '> </embed>';
+  }
+  document.write(str);
+}
+function AC_FL_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".swf", "movie", "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+     , "application/x-shockwave-flash"
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_SW_RunContent(){
+  var ret = 
+    AC_GetArgs
+    (  arguments, ".dcr", "src", "clsid:166B1BCA-3F9C-11CF-8075-444553540000"
+     , null
+    );
+  AC_Generateobj(ret.objAttrs, ret.params, ret.embedAttrs);
+}
+function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
+  var ret = new Object();
+  ret.embedAttrs = new Object();
+  ret.params = new Object();
+  ret.objAttrs = new Object();
+  for (var i=0; i < args.length; i=i+2){
+    var currArg = args[i].toLowerCase();    
+    switch (currArg){ 
+      case "classid":
+        break;
+      case "pluginspage":
+        ret.embedAttrs[args[i]] = args[i+1];
+        break;
+      case "src":
+      case "movie": 
+        args[i+1] = AC_AddExtension(args[i+1], ext);
+        ret.embedAttrs["src"] = args[i+1];
+        ret.params[srcParamName] = args[i+1];
+        break;
+      case "onafterupdate":
+      case "onbeforeupdate":
+      case "onblur":
+      case "oncellchange":
+      case "onclick":
+      case "ondblclick":
+      case "ondrag":
+      case "ondragend":
+      case "ondragenter":
+      case "ondragleave":
+      case "ondragover":
+      case "ondrop":
+      case "onfinish":
+      case "onfocus":
+      case "onhelp":
+      case "onmousedown":
+      case "onmouseup":
+      case "onmouseover":
+      case "onmousemove":
+      case "onmouseout":
+      case "onkeypress":
+      case "onkeydown":
+      case "onkeyup":
+      case "onload":
+      case "onlosecapture":
+      case "onpropertychange":
+      case "onreadystatechange":
+      case "onrowsdelete":
+      case "onrowenter":
+      case "onrowexit":
+      case "onrowsinserted":
+      case "onstart":
+      case "onscroll":
+      case "onbeforeeditfocus":
+      case "onactivate":
+      case "onbeforedeactivate":
+      case "ondeactivate":
+      case "type":
+      case "codebase":
+      case "id":
+        ret.objAttrs[args[i]] = args[i+1];
+        break;
+      case "width":
+      case "height":
+      case "align":
+      case "vspace": 
+      case "hspace":
+      case "class":
+      case "title":
+      case "accesskey":
+      case "name":
+      case "tabindex":
+        ret.embedAttrs[args[i]] = ret.objAttrs[args[i]] = args[i+1];
+        break;
+      default:
+        ret.embedAttrs[args[i]] = ret.params[args[i]] = args[i+1];
+    }
+  }
+  ret.objAttrs["classid"] = classid;
+  if (mimeType) ret.embedAttrs["type"] = mimeType;
+  return ret;
+}
+// -->
+</script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["treemap"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Destination',               'City',      'Number', 'Market increase/decrease (color)'],
+          ['Tourist',                     null,             0,                               8],
+          ['Foreign',                'Tourist',             0,                               9],
+          ['Domestic',               'Tourist',             0,                               9],
+          ['Agra',                  'Domestic',             0,                               7],
+          ['Aurangabad',            'Domestic',             0,                               21],
+          ['Mumbai',                'Domestic',             0,                               18],
+          ['Bangalore',             'Domestic',             0,                               12],
+          ['Delhi',                 'Domestic',             0,                               8],
+          ['Taj Mahal',                 'Agra',            4087968,                               7],
+          ['Agra Fort (14 Lakhs)',      'Agra',            1417641,                               12],
+          ['Fatehpur Sikri (3 Lakhs)',  'Agra',             315420,                               25],
+          ['Akbar Tomb Sikandra (4 Lakhs)',        'Agra',     409368,                             18],
+          ['Mariams Tomb (18 Thousand)',            'Agra',      18056,                             45],
+          ['Itimad-ud-Daula (79 Thousand)',          'Agra',      79208,                             33],
+          ['Ajanta Caves (4 Lakhs)',                 'Aurangabad',31689,                             14],
+          ['Ellora Caves (11 Lakhs)',               'Aurangabad', 59075,                             7],
+          ['Pandavlena Caves Pathardi (1 Lakhs)',   'Aurangabad',389572,                             18],
+          ['Daulatabad Fort (6 Thousand)',        'Aurangabad', 1187432,                             40],
+          ['Bibi-Ka-Maqbara Aurangabad (11 Lakhs)',   'Aurangabad',138531,                           7],
+          ['Aurangabad Caves (45 Thousand)',          'Aurangabad',  6049,                           25],
+          ['Elephanta caves Gharapuri (3 Lakhs)',       'Mumbai', 1100088,                           7],
+          ['Kanheri Caves Mumbai (1 Lakhs) ',           'Mumbai', 45369,                             23],
+          ['Karla Caves Karla (2 Lakhs)',                'Mumbai',     202703,                       11],
+          ['Caves Temple & Inscriptions Junnar (3 Lakhs)',  'Mumbai',  397176,                       7],
+          ['Raigad Fort  (1 Lakhs)',                  'Mumbai',    186928,                           23],
+          
+          ['Hirakota Old Fort Alibagh (44 Thousand)',    'Mumbai',        44908,                     33],
+          ['Old Fort Sholapur (1 Lakhs)',             'Mumbai',          186928,                     23],
+          ['Caves Temples & Inscription Bhaja  (44 Thousand)',  'Mumbai', 86928,                     25],
+          ['Aga Khan Palace Pune  (96 Thousand)',          'Mumbai',       96851,                    30],
+          ['Group of Monuments Hampi  (4 Lakhs)',             'Bangalore', 475123,                   11],
+          ['Daria Daaulat Bagh Srirangapatnam  (8 Lakhs)',    'Bangalore',   873099,                 7],
+          ['Keshva Temple Somnathpura  ( 1 Lakhs)',            'Bangalore', 180920,     12],
+          ['Tipu Sultan Palace Bangalore  (1 Lakhs)',          'Bangalore', 132197,     12],
+          ['Chitradurga Fort Chitradurga  (3 Lakhs)',          'Bangalore', 325539,     15],
+          ['Bellary Fort Bellary (6 Thousand)',                'Bangalore', 6140,     27],
+          ['Vihal Temple Venkatatapuram (2 Lakhs)',            'Bangalore', 260052,     19],
+          ['Zanana Enclosure Kamalapur (2 Lakhs)',             'Bangalore', 222070,     19],
+          ['Jantar Mantar (3 Lakhs)',                              'Delhi', 340492,     16],
+          ['Rahim-Khane-Khanam Tomb (6 Thousand)',                   'Delhi', 8217,     57],
+          ['Purana Quila (5 Lakhs)',                               'Delhi', 517200,     13],
+          ['Tughluqabad Fort  (24 Thousand)',                       'Delhi', 24339,     28],
+          ['Kotla Feroz Shah  (46 Thousand)',                       'Delhi', 46260,     25],
+          ['Safdarjung Tomb  (52 Thousand)',                        'Delhi', 52385,     20],
+          ['Red Fort (22 Lakhs)',                                 'Delhi', 2262810,     10],
+          ['Humayuns Tomb  (3 Lakhs)',                            'Delhi', 355629,     16],
+          ['Qutab Minar (24 Lakhs)',                              'Delhi', 2498907,     10],
+          ['Guwahati',              'Foreign',             0,                               9],
+          ['Hyderabad',             'Foreign',             0,                               0],
+          ['Jaipur',                'Foreign',             0,                               0],
+          ['Lucknow',               'Foreign',             0,                               76],
+          ['Patna',                 'Foreign',             0,                               56],
+          ['Ahom Raja’s Palace, Gurgaon',   'Guwahati',          107,                       67],   
+          ['Karenghar Palace, Jaysagar',    'Guwahati',          479,                       26],   
+          ['Ranghar Pavillion, Jaysagar',   'Guwahati',          421,                       25],   
+          ['Vishudol, Joysagar',            'Guwahati',           27,                       23],      
+          ['Group of Maidan, Cheraideo',    'Guwahati',           18,                       21],    
+          ['Golkonda Fort, Golkonda', 'Hyderabad',          18637,                       16],   
+          ['Charminar', 'Hyderabad',                        12636,                       14],   
+          ['Fort, Raja & Rani Mahal Chandragiri', 'Hyderabad',           158,          0],   
+          ['Ruined Buddhist Stupa & Remains Amarvati ', 'Hyderabad',     360,          0],   
+          ['Hill of Nagarjunakonda with ancient remains', 'Hyderabad',   840,          0],   
+          ['Group of Buddhist monuments, Guntupali', 'Hyderabad',         19,          0],   
+          ['Four storeyed Rock-cut Hindu Temple, Undavalli ','Hyderabad',417,          0],   
+          ['Warangal Fort, Warangal ', 'Hyderabad',                      324,          0],   
+          ['Deeg Palaces, Deeg',        'Jaipur',    1145,  83],
+          ['Kumbhalgarh Fort',          'Jaipur',   18726,  53],
+          ['Chittaurgarh Fort',         'Jaipur',   19223,  73],
+          ['Rani Jhansi Mahal, Jhansi ', 'Lucknow',   100,  63], 
+          ['Sahet of Shravasti Monument', 'Lucknow', 3621,  43],
+          ['Rani Jhansi Kila, Jhansi ',   'Lucknow',  743,  33],
+          ['Residency, Lucknow ',         'Lucknow', 1775,  23],
+          ['Site of Mayuran Palace, Kumarhar',      'Patna',  660,    0],
+          ['Ancient Remain, Vaishali ',             'Patna',  6346,   0],
+          ['Sarnath Excavated Site',                'Patna',  60341,  0],
+          ['Jaunpur Fort ',                         'Patna',  109,    0],
+          ['Man Singh Observatory, Varanasi',       'Patna',  422,    0],
+          ['Nalanda Excavated Site',                'Patna',  66544,  0],
+          ['Sasaram Shershah Suri Tomb ',           'Patna',  248,    0],
+          ['Lord Cornwallis Tomb, Gazipur ',        'Patna',  112,    0],
+          ['Excavated Site Vikramshila, Antichak',  'Patna',  304,    0]       
+        ]);                                                  
+                                                          
+                                                          
+                                                          
+                                                          
+                                            
+        // Create and draw the visualization.
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+        tree.draw(data, {
+          minColor: '#ff9900',
+          midColor: '#ddd',
+          maxColor: '#585858',
+          headerHeight: 15,
+          fontColor: 'black',
+          showScale: true});
+        }
+    </script>
+</script>
+     
+    <title>Tourism in India- a visualization</title>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns">
+		<div class="five columns">
+			<div style="margin-bottom: 20px">
+				<img src="./images/heading1.png" target="_blank">
+			
+			<p><strong>'Tourism in India'</strong> is an attempt to visualize Indian tourism data to understand the patterns and trends in the tourism industry. The Visualizations below are specific to the year 2010.
+   			</p>
+   			<p>Dataset:  Tourism Statistics of India <br>
+   			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  data.gov.in  <br> 
+    		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incredibleindia.org 
+    		</p> 
+  			</div>
+  		</div>
+		<div class="seven columns">
+			<div style="margin-top: 25px">
+				<img src="./images/topfta.png">	
+    			<iframe width='790' height='415' frameBorder='0' src='http://a.tiles.mapbox.com/v3/anushkasr.top_markets.html#2/0.5273363048115169/-0.17578125'></iframe>
+			</div>
+		</div>
+	</div>
+		
+		<div class="sixteen columns">
+			<!-- <h3>About Skeleton?</h3> -->
+			
+			<div class="dviz-content">
+			<div style="margin-top:10px" ; align="left";> 
+			<img src="./images/Growthrate.png"> 
+			<pre><code>
+			  Year,domestic,foreign
+			  1992,22.2,-1.6
+			  1993,29.9,14.4
+			  1994,20.1,13.8
+			  1995,7.5,15.2
+			  1996,2.5,8.4
+			  1997,14.1,9.3
+			  1998,5.2,-0.7
+			  1999,13.4,5.3
+			  2000,15.4,1.1
+			  2001,7.4,-7.8
+			  2002,14,-5.1
+			  2003,14.6,30.1
+			  2004,18.5,24.6
+			  2005,7,19
+			  2006,17.9,18
+			  2007,13.9,12.9
+			  2008,6.9,8.5
+			  2009,18.8,-0.1
+			  2010,10.7,24.2
+
+			</code></pre>
+			<p><code>(@line {colors:['#FF8000','#333333'],height:300,width:1100,vAxis:{title: 'Growth Rate (In Percentage)'},hAxis:{title: 'Years'}})</code></p>
+			</div>
+	
+					<div style="background-color:#fff"></div>
+					<img src="./images/fee.png">
+			<pre>
+				   <code>
+				year,earnings
+				1991,4318
+				1992,5951
+				1993,6611
+				1994,7129
+				1995,8430
+				1996,10046
+				1997,10511
+				1998,12150
+				1999,12951
+				2000,15626
+				2001,15083
+				2002,15064
+				2003,20729
+				2004,27944
+				2005,33123
+				2006,39025
+				2007,44360
+				2008,51294
+				2009,53700
+				2010,64889
+				2011,77591
+				   </code>
+				</pre>
+				<p><code>(@scatter {colors:['#FF8000'],height:300,width:1100,vAxis:{title: 'Foreign Exchange Earnings (In Crores)'},hAxis:{title: 'Years'}})</code></p>
+			
+				
+	</div>
+</div>
+
+	
+  <div class="sixteen columns">
+			<div class="row">
+ <div style="margin-top:5px";> 
+  <img src="./images/top10most.png">
+  <script language="JavaScript" type="text/javascript">
+  AC_FL_RunContent(
+    'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
+    'width', '1100',
+    'height', '750',
+    'src', 'tabswitchfinal1',
+    'quality', 'high',
+    'pluginspage', 'http://www.adobe.com/go/getflashplayer',
+    'align', 'middle',
+    'play', 'true',
+    'loop', 'true',
+    'scale', 'showall',
+    'wmode', 'window',
+    'devicefont', 'false',
+    'id', 'tabswitchfinal1',
+    'bgcolor', '#fff',
+    'name', 'tabswitchfinal1',
+    'menu', 'true',
+    'allowFullScreen', 'false',
+    'allowScriptAccess','sameDomain',
+    'movie', 'tabswitchfinal1',
+    'salign', ''
+    ); //end AC code
+</script>
+<noscript>
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1100" height="750" id="tabswitchfinal1" align="middle">
+  <param name="allowScriptAccess" value="sameDomain" />
+  <param name="allowFullScreen" value="false" />
+  <param name="movie" value="tabswitchfinal1.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#fff" /> <embed src="tabswitchfinal1.swf" quality="high" bgcolor="#fff" width="1100" height="750" name="tabswitchfinal1" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+  </object>
+</noscript>
+
+    
+</div>
+
+</div>
+
+<div class="sixteen columns">
+  
+    <img src="./images/attraction.png">
+ <div id="chart_div" style="width: 1110px; height: 500px;"></div>
+</div>
+
+
+
+    <footer>
+			<div class="sixteen columns">
+			<h6 class="credits">Made using <a href="http://www.getskeleton.com/">Skeleton</a> and hosted on <a href="https://github.com/shwetahumnabadkar/Info_Viz_documentation/">Github</a>.</h6>
+			</div>
+		</footer>
+		
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
